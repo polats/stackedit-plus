@@ -132,7 +132,7 @@
     "worker-loader": "^1.1.1"
   },
   "engines": {
-    "node": ">=13.0.0 <14.0.0",
+    "node": "11.15.0",
     "npm": ">=5.0.0"
   },
   "browserslist": [
