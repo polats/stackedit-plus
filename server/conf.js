@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const pandocPath = process.env.PANDOC_PATH || 'pandoc';
 const wkhtmltopdfPath = process.env.WKHTMLTOPDF_PATH || 'wkhtmltopdf';
 const userBucketName = process.env.USER_BUCKET_NAME || 'stackeditplus';
