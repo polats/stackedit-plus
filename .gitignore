@@ -9,5 +9,3 @@ stackedit_v4
 chrome-app/*.zip
 /test/unit/coverage/
 .env
-/config/dev.env.js
-/config/prod.env.js
