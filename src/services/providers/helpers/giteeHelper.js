@@ -7,7 +7,7 @@ import constants from '../../../data/constants';
 
 const tokenExpirationMargin = 5 * 60 * 1000;
 
-const appDataRepo = 'stackeditplus-appdata';
+const appDataRepo = constants.mainWorkspaceRepo;
 
 const request = (token, options) => networkSvc.request({
   ...options,

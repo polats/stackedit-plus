@@ -3,10 +3,11 @@ import networkSvc from '../../networkSvc';
 import store from '../../../store';
 import userSvc from '../../userSvc';
 import badgeSvc from '../../badgeSvc';
+import constants from '../../../data/constants';
 
 const getScopes = token => [token.repoFullAccess ? 'repo' : 'public_repo', 'gist'];
 
-const appDataRepo = 'stackeditplus-appdata';
+const appDataRepo = constants.mainWorkspaceRepo;
 
 const request = (token, options) => networkSvc.request({
   ...options,
@@ -123,7 +124,7 @@ export default {
     };
 
     if (isMain) {
-      // check stackeditplus-appdata repo exist?
+      // check main workspace repo exist?
       await this.checkAndCreateRepo(token);
     }
     // Refresh Sponsor flag

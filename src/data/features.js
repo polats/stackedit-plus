@@ -1,3 +1,5 @@
+import constants from './constants';
+
 class Feature {
   constructor(id, badgeName, description, children = null) {
     this.id = id;
@@ -153,7 +155,7 @@ export default [
       new Feature(
         'syncMainWorkspace',
         'Main workspace synced',
-        'Sign in with GitHub to sync your main workspace with your GitHub stackeditplus-appdata repo.',
+        'Sign in with GitHub to sync your main workspace with your GitHub ' + constants.mainWorkspaceRepo + ' repo.', // eslint-disable-line prefer-template
       ),
       new Feature(
         'sponsor',

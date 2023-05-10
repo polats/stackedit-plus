@@ -24,4 +24,5 @@ export default {
   ],
   textMaxLength: 250000,
   defaultName: 'Untitled',
+  mainWorkspaceRepo: 'source',
 };

@@ -3,8 +3,9 @@ import giteeHelper from './helpers/giteeHelper';
 import Provider from './common/Provider';
 import gitWorkspaceSvc from '../gitWorkspaceSvc';
 import userSvc from '../userSvc';
+import constants from '../../data/constants';
 
-const appDataRepo = 'stackeditplus-appdata';
+const appDataRepo = constants.mainWorkspaceRepo;
 const appDataBranch = 'master';
 
 export default new Provider({
